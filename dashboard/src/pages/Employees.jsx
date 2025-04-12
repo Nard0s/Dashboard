@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChartsHearder = () => {
+const Employees = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const ChartsHearder = () => {
   )
 }
 
-export default ChartsHearder
+export default Employees
