@@ -15,10 +15,27 @@ const Sidebar = () => {
             <SiShopware/> <span>Shoppy</span>
           </Link>
           <TooltipComponent content='Menu' position='BottomCenter'>
-              <Button>
+              <button type="button"
+              onClick={()=>{}}
+              className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden">
                 <MdOutlineCancel/>
-              </Button>
+                 </button>
           </TooltipComponent>
+        </div>
+        <div className='mt-10'>
+          {links.map((item)=>(
+            <div key={item.title}>
+              <p className="text-gray-400 m-3 mt-4 uppercase">
+              {item.title}
+              </p>
+              {item.links.map((Link)=>(
+                <NavLink 
+                to=''>
+
+                </NavLink>
+              ))}
+            </div>
+          ))}
         </div>
       </>)}
     </div>
